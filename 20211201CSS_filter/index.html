@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<style>
+  .img666 {
+    background: url('https://picsum.photos/1920/1080/?random=1') no-repeat;
+    object-fit: cover;
+
+  }
+
+  .box {
+    width: 369px;
+    height: 500px;
+    border: 1px solid;
+  }
+
+  .rounded-start {
+    border-bottom-left-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+  }
+
+  @media(max-width:768px) {
+    .box {
+      height: 100px;
+    }
+
+    .rounded-start {
+      border-top-right-radius: 1rem !important;
+      border-top-left-radius: 1rem !important;
+      border-bottom-left-radius: 0rem !important;
+    }
+  }
+</style>
+
+<body>
+  <div class=" container-fluid d-md-flex align-items-center img666 w-100 position-fixed overflow-auto ps-5 "
+    style="height: 950px;">
+    <div class=" row flex-md-nowrap mt-5 mt-md-0  flex-column align-items-center flex-md-row  w-100 ">
+      <div
+        class="  rounded-start box col-12 d-flex align-items-center justify-content-center text-center  col-md-auto display-5">
+        backdrop-filter效果</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:none">backdrop-filter: none
+      </div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:grayscale(1)">
+        backdrop-filter: grayscale(1)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:brightness(1.5)">
+        backdrop-filter: brightness(1.5)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:blur(5px)">backdrop-filter:
+        blur(5px)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter: contrast(0.8)">
+        backdrop-filter: contrast(0.8)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter: invert(0.7)">
+        backdrop-filter: invert(0.7)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:opacity(0.4)">
+        backdrop-filter: opacity(0.4)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:sepia(0.4)">
+        backdrop-filter: sepia(0.4)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:saturate(1.8)">
+        backdrop-filter: saturate(1.8)</div>
+      <div class="box col-12 d-flex align-items-center justify-content-center   col-md-auto"
+        style="backdrop-filter:hue-rotate(120deg)">
+        backdrop-filter:
+        hue-rotate(120deg)
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
